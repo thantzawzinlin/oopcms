@@ -1,5 +1,5 @@
 <?php include("includes/header.php"); ?>
-
+<?php include('includes/database.php');?>
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,6 +20,12 @@
                             Blank Page
                             <small>Subheading</small>
                         </h1>
+
+                        <?php if($database->connection){
+                            echo "true one";
+                            
+                        }
+                        ?>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
